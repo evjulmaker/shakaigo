@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body{
+			background-color: #5F7F8A;
+		}
+
+		* {
+			font-family: sans-serif;
+		    margin: auto;
+		    padding: 10px;
+		    box-sizing: border-box;
+		}
+
+		h1 {
+			text-align: left;
+		    color: #6FCF97;
+		}
+
+		h2 {
+		    color: #2F5D73;
+		}
+
+		p {
+			font-size: 20px;
+			text-align: justify;
+			line-height: 1.5;
+		}
+
+		.navbar {
+		    background: #2F5D73;
+		}
+
+		.grid-line {
+		    color: #F5FBEF;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+	    <div id="jam-box">
+        <div id="tanggal">📅 --</div>
+        <div id="waktu">🕒 --:--:--</div>
+    </div>
+	</header>
+	<nav class="navbar">
+	    <a href="index.html">Home</a>
+	    <a href="about.html">About</a>
+	    <a href="gallery.html">Gallery</a>
+	    <a href="contact.html">Contact</a>
+	</nav>
+
+	<div id="container">
+		<div id="content">
+			<h1>– Contact Us</h1>
+			<p>
+            Jika Anda memiliki pertanyaan, saran, atau ingin berbagi kenangan SMA,
+            silakan hubungi kami melalui informasi atau formulir di bawah ini.</p>
+
+            <div class="container contact-info">
+			    <div class="card">
+			    	<h2>Informasi Kontak</h2>
+		            <p>📧 Email: evajulianti@gmail.com</p>
+		            <p>📲 Instagram: evajll_</p>
+		            <p>📞 WhatsApp: 08xxxxxxx004</p>
+		            <p>📍 Alamat: Depok, Indonesia</p>
+			    </div>
+
+		        <div class="card">
+		            <h2>Form Kontak</h2>
+		            <form>
+		                <label>Nama</label>
+		                <input type="text" placeholder="Masukkan nama" required>
+
+		                <label>Email</label>
+		                <input type="email" placeholder="Masukkan email" required>
+
+		                <label>Pesan</label>
+		                <textarea placeholder="Tulis pesan Anda..." required></textarea>
+
+		                <button type="submit">Kirim Pesan</button>
+		            </form>
+		        </div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-bottom">
+		        © 2025 Eva Julianti | 251011700796 | 01SIFP014
+		    </div>
+		</footer>
+	</div>
+
+	<script>
+		function tampilkanWaktu() {
+		    const sekarang = new Date();
+
+		    const tanggal = sekarang.toLocaleDateString("id-ID", {
+		        weekday: "long",
+		        year: "numeric",
+		        month: "long",
+		        day: "numeric"
+		    });
+
+		    const waktu = sekarang.toLocaleTimeString("id-ID");
+
+		    document.getElementById("tanggal").innerHTML = "📅 " + tanggal;
+		    document.getElementById("waktu").innerHTML   = "🕒 " + waktu;
+		}
+		tampilkanWaktu();
+		setInterval(tampilkanWaktu, 1000);
+	</script>
+</body>
+</html>

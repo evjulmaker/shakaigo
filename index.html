@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shakaigo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body{
+			background-color: #5F7F8A;
+		}
+
+		* {
+			font-family: sans-serif;
+		    margin: 0;
+		    padding: 10px;
+		    box-sizing: border-box;
+		}
+
+		h1 {
+			text-align: left;
+		    color: #6FCF97;
+		}
+
+		h2 {
+		    color: #2F5D73;
+		}
+
+		p {
+			font-size: 20px;
+			text-align: justify;
+			line-height: 1.5;
+		}
+
+		.navbar {
+		    background: #2F5D73;
+		}
+
+		.grid-line {
+		    color: #F5FBEF;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+	    <div id="jam-box">
+        <div id="tanggal">📅 --</div>
+        <div id="waktu">🕒 --:--:--</div>
+    </div>
+	</header>
+	<nav class="navbar">
+	    <a href="index.html">Home</a>
+	    <a href="about.html">About</a>
+	    <a href="gallery.html">Gallery</a>
+	    <a href="contact.html">Contact</a>
+	</nav>
+
+	<div id="container">
+		<div id="content">
+		    <h1>– Selamat Datang di</h1>
+		    <h2>Kenangan SMA Mengabadikan cerita, tawa, dan kebersamaan yang tak terlupakan</h2>
+
+		    <div class="section">
+	            <img src="gambar/1.png" alt="Kenangan SMA">
+	            <div class="text">
+	                <h2>Suasana di Kelas</h2>
+	                <p>
+	                    Di kelas inilah semuanya dimulai. Dari duduk bareng temen sebangku, ketawa pelan pas guru lagi jelasin, sampai panik bareng waktu ulangan. Walaupun kadang capek dan ngantuk, kelas tetap jadi tempat yang paling sering bikin kangen.
+	                </p>
+	            </div>
+	        </div>
+
+	        <div class="section">
+	            <img src="gambar/3.png" alt="Kenangan SMA">
+	            <div class="text">
+	                <h2>Upacara Senin</h2>
+	                <p>
+	                    Upacara hari Senin selalu jadi momen penuh perjuangan. Berdiri lama, matahari nyengat, kaki pegel tapi tetap harus sikap sempurna. Walaupun sering ngeluh dan ngantuk berat, upacara ini diam-diam jadi bagian penting dari cerita SMA yang nggak bakal terlupa.
+	                </p>
+	            </div>
+	        </div>
+
+	        <div class="section">
+	            <img src="gambar/2.png" alt="Kenangan SMA">
+	            <div class="text">
+	                <h2>JamKos = Surga Dunia😋</h2>
+	                <p>
+	                    Jam kosong tuh anugerah paling epic di SMA. Kesempatan buat nongkrong di kantin, school tour, cerita hal random, ada yang tidur di ubin, bahkan bangku, ada juga yang rame nggak jelas sampe kelas berubah jadi basecamp dadakan, bebas, santai, dan pastinya penuh ketawa receh. Momen sederhana tapi justru itu yang bikin SMA terasa seru dan nggak gampang dilupain.s
+	                </p>
+	            </div>
+	        </div>
+
+	        <div class="section">
+	            <img src="gambar/5.png" alt="Kenangan SMA">
+	            <div class="text">
+	                <h2>Kita Pergi Jalan-jalan🚌🚌</h2>
+	                <p>
+	                    Ini tuh momen paling ditunggu-tunggu. Berangkat rame-rame naik bus yang isinya ketawa, nyanyi nggak jelas, sama cerita random yang nggak ada abisnya. Ada yang niat foto buat feed, ada juga yang kerjanya cuma jajan sama bengong. Capek sih, tapi serunya dapet banget. Pulangnya suara serak, badan pegel, tapi hati seneng karena kenangannya nggak bakal ilang.
+	                </p>
+	            </div>
+	        </div>
+
+	        <div class="section">
+	            <img src="gambar/4.png" alt="Kenangan SMA">
+	            <div class="text">
+	                <h2>Mapel Olahraga yang Paling di Tunggu</h2>
+	                <p>
+	                    Mapel olahraga selalu jadi favorit. Lari keliling lapangan sambil ngeluh, keringetan bareng, ketawa bareng. Ada yang niat, ada yang pura-pura capek. Tapi jujur aja, pelajaran ini paling bikin hidup 😎
+	                </p>
+	            </div>
+	        </div>
+
+	        <div class="section">
+	            <img src="gambar/6.png" alt="Kenangan SMA">
+	            <div class="text">
+	                <h2>Matematika Si Punya Banyak Cerita</h2>
+	                <p>
+	                    Matematika itu pelajaran paling bikin campur aduk. Kadang ngerti, kadang rasanya otak auto blank. Rumus segudang, angka bertebaran, tapi ujung-ujungnya tetap nanya temen: “eh, dapet berapa jawaban lu?” 🤯 Walaupun sering bikin pusing, matpel ini nggak pernah absen dari cerita SMA.
+	                </p>
+	            </div>
+	        </div>
+		</div>
+		<footer class="footer">
+			<div class="footer-bottom">
+		        © 2025 Eva Julianti | 251011700796 | 01SIFP014
+		    </div>
+		</footer>
+	</div>
+
+	<script>
+		function tampilkanWaktu() {
+		    const sekarang = new Date();
+
+		    const tanggal = sekarang.toLocaleDateString("id-ID", {
+		        weekday: "long",
+		        year: "numeric",
+		        month: "long",
+		        day: "numeric"
+		    });
+
+		    const waktu = sekarang.toLocaleTimeString("id-ID");
+
+		    document.getElementById("tanggal").innerHTML = "📅 " + tanggal;
+		    document.getElementById("waktu").innerHTML   = "🕒 " + waktu;
+		}
+		tampilkanWaktu();
+		setInterval(tampilkanWaktu, 1000);
+	</script>
+</body>
+</html>

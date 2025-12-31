@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body{
+			background-color: #5F7F8A;
+		}
+
+		* {
+			font-family: sans-serif;
+		    margin: auto;
+		    padding: 10px;
+		    box-sizing: border-box;
+		}
+
+		h1 {
+			text-align: left;
+		    color: #6FCF97;
+		}
+
+		h2 {
+		    color: #2F5D73;
+		}
+
+		p {
+			font-size: 20px;
+			text-align: justify;
+			line-height: 1.5;
+		}
+
+		.navbar {
+		    background: #2F5D73;
+		}
+
+		.grid-line {
+		    color: #F5FBEF;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+	    <div id="jam-box">
+        <div id="tanggal">📅 --</div>
+        <div id="waktu">🕒 --:--:--</div>
+    </div>
+	</header>
+	<nav class="navbar">
+	    <a href="index.html">Home</a>
+	    <a href="about.html">About</a>
+	    <a href="gallery.html">Gallery</a>
+	    <a href="contact.html">Contact</a>
+	</nav>
+
+	<div id="container">
+		<div id="content">
+		    <h1>– About</h1>
+		    <p>
+		    	Website ini dibuat sebagai media untuk mengabadikan dan mengenang momen-momen berharga selama masa Sekolah Menengah Atas. Masa SMA adalah salah satu fase paling berkesan dalam kehidupan, di mana banyak cerita, pengalaman, dan kenangan tercipta—baik yang penuh tawa maupun yang mengajarkan arti perjuangan dan kebersamaan.<br>
+		    	<br>
+		    	Selama menempuh pendidikan di bangku SMA, setiap siswa mengalami berbagai peristiwa yang membentuk karakter dan kepribadian. Mulai dari hari pertama masuk sekolah dengan perasaan gugup, pertemuan dengan teman-teman baru, hingga proses beradaptasi dengan lingkungan belajar yang penuh tantangan. Semua momen tersebut menjadi bagian penting dari perjalanan hidup yang tidak mudah dilupakan.<br>
+		    	<br>
+		    	Website ini hadir sebagai ruang nostalgia, tempat untuk menyimpan cerita, foto, dan dokumentasi kegiatan sekolah seperti kegiatan belajar mengajar, upacara bendera, kerja kelompok, lomba antar kelas, kegiatan ekstrakurikuler, hingga momen perpisahan yang penuh haru. Melalui halaman ini, pengunjung diajak untuk kembali mengenang kebersamaan di kelas, canda tawa di sela-sela pelajaran, serta semangat kebersamaan dalam menghadapi berbagai tugas dan ujian.<br>
+		    	<br>
+		    	Selain sebagai media dokumentasi, Kenangan SMA juga bertujuan untuk mempererat kembali ikatan persahabatan yang pernah terjalin. Meski waktu telah berlalu dan setiap orang telah menempuh jalan hidupnya masing-masing, kenangan yang tercipta selama masa SMA tetap memiliki tempat tersendiri di hati. Website ini diharapkan dapat menjadi pengingat bahwa setiap momen sederhana yang pernah dilalui memiliki makna yang berharga.<br>
+		    	<br>
+		    	Dengan desain yang sederhana, nyaman, dan mudah diakses, website Kenangan SMA dirancang agar pengunjung dapat merasakan suasana hangat dan penuh nostalgia. Setiap konten yang ditampilkan diharapkan mampu membangkitkan kembali kenangan lama serta menumbuhkan rasa syukur atas pengalaman yang pernah dijalani bersama.<br>
+		    	<br>
+		    	Akhir kata, website Kenangan SMA dibuat tidak hanya sebagai tugas atau media informasi, tetapi juga sebagai wadah untuk menghargai masa lalu, mengenang perjalanan pendidikan, dan menyimpan cerita yang akan selalu menjadi bagian dari sejarah hidup setiap individu.
+		    </p>
+		</div>
+		<footer class="footer">
+			<div class="footer-bottom">
+		        © 2025 Eva Julianti | 251011700796 | 01SIFP014
+		    </div>
+		</footer>
+	</div>
+
+	<script>
+		function tampilkanWaktu() {
+		    const sekarang = new Date();
+
+		    const tanggal = sekarang.toLocaleDateString("id-ID", {
+		        weekday: "long",
+		        year: "numeric",
+		        month: "long",
+		        day: "numeric"
+		    });
+
+		    const waktu = sekarang.toLocaleTimeString("id-ID");
+
+		    document.getElementById("tanggal").innerHTML = "📅 " + tanggal;
+		    document.getElementById("waktu").innerHTML   = "🕒 " + waktu;
+		}
+		tampilkanWaktu();
+		setInterval(tampilkanWaktu, 1000);
+	</script>
+</body>
+</html>

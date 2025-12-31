@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body{
+			background-color: #5F7F8A;
+		}
+
+		* {
+			font-family: sans-serif;
+		    margin: auto;
+		    padding: 10px;
+		    box-sizing: border-box;
+		}
+
+		h1 {
+			text-align: left;
+		    color: #6FCF97;
+		}
+
+		h2 {
+		    color: #2F5D73;
+		}
+
+		p {
+			font-size: 20px;
+			text-align: justify;
+			line-height: 1.5;
+		}
+
+		.navbar {
+		    background: #2F5D73;
+		}
+
+		.grid-line {
+		    color: #F5FBEF;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+	    <div id="jam-box">
+        <div id="tanggal">📅 --</div>
+        <div id="waktu">🕒 --:--:--</div>
+    </div>
+	</header>
+	<nav class="navbar">
+	    <a href="index.html">Home</a>
+	    <a href="about.html">About</a>
+	    <a href="gallery.html">Gallery</a>
+	    <a href="contact.html">Contact</a>
+	</nav>
+
+	<div id="container">
+		<div id="content">
+			<div class="container grid">
+			    <div class="card">
+			    	<img src="gambar/bukber24.JPG">
+			    	<h3>BUKBER 2024<h3>
+			    	<a href="https://drive.google.com/drive/folders/1WiH8dnwXY4btik2fY_jfCvwxRVp1znAv?usp=drive_link" class="btn btn-primary">Selengkapnya</a>
+			    </div>
+
+			    <div class="card">
+			    	<img src="gambar/batik.jpeg">
+			    	<h3>BATIK DAY<h3>
+			    	<a href="https://drive.google.com/drive/folders/12vQk6qqWLbNWweecLquFzAqy1Hn1A2jJ?usp=drive_link" class="btn btn-primary">Selengkapnya</a>
+			    </div>
+
+			    <div class="card">
+			    	<img src="gambar/upacara.jpeg">
+			    	<h3>PETUGAS UPACARA<h3>
+			    	<a href="https://drive.google.com/drive/folders/19w-dLepEVolJUu4AZb6pJuW5kDIAtOj4?usp=drive_link" class="btn btn-primary">Selengkapnya</a>
+			    </div>
+
+			    <div class="card">
+			    	<img src="gambar/uprak.jpeg">
+			    	<h3>UPRAK SASJEP<h3>
+			    	<a href="https://drive.google.com/drive/folders/11Ls7_dGcT9Z8DbbIROZN3dpBzN263HpV?usp=drive_link" class="btn btn-primary">Selengkapnya</a>
+			    </div>
+
+			    <div class="card">
+			    	<img src="gambar/bukber25.jpeg">
+			    	<h3>BUKBER 2025<h3>
+			    	<a href="https://drive.google.com/drive/folders/1RPnYce0v6vuuqOchzO6BpGmMHJoXu1u0?usp=drive_link" class="btn btn-primary">Selengkapnya</a>
+			    </div>
+
+			    <div class="card">
+			    	<img src="gambar/study.jpeg">
+			    	<h3>HEALING~~🚌🚌<h3>
+			    	<a href="https://drive.google.com/drive/folders/11c2FndYC26DRlN7IcBpCGotnFf8Kk5kl?usp=drive_link" class="btn btn-primary">Selengkapnya</a>
+			    </div>
+
+			    <div class="card">
+			    	<img src="gambar/KEBAYA.jpg">
+			    	<h3>KEBAYA DAY<h3>
+			    	<a href="https://drive.google.com/drive/folders/1FYgWPedSNAwPuolAXmtFxjrowub4sV-i?usp=drive_link" class="btn btn-primary">Selengkapnya</a>
+			    </div>
+
+			    <div class="card">
+			    	<img src="gambar/makraboke.jpeg">
+			    	<h3>MAKRAB VICTOURAS<h3>
+			    	<a href="https://drive.google.com/drive/folders/1GZQaD-wNe4TuOZO6AtAXJaFms_AWM_pN?usp=drive_link" class="btn btn-primary">Selengkapnya</a>
+			    </div>
+
+			    <div class="card">
+			    	<img src="gambar/sila.jpeg">
+			    	<h3>PAKRAB SHAKAIGO<h3>
+			    	<a href="https://drive.google.com/drive/folders/1Xvzk6SJoX6CG32X_LkitjAx31tJydDwJ?usp=drive_link" class="btn btn-primary">Selengkapnya</a>
+			    </div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer-bottom">
+		        © 2025 Eva Julianti | 251011700796 | 01SIFP014
+		    </div>
+		</footer>
+	</div>
+
+	<script>
+		function tampilkanWaktu() {
+		    const sekarang = new Date();
+
+		    const tanggal = sekarang.toLocaleDateString("id-ID", {
+		        weekday: "long",
+		        year: "numeric",
+		        month: "long",
+		        day: "numeric"
+		    });
+
+		    const waktu = sekarang.toLocaleTimeString("id-ID");
+
+		    document.getElementById("tanggal").innerHTML = "📅 " + tanggal;
+		    document.getElementById("waktu").innerHTML   = "🕒 " + waktu;
+		}
+		tampilkanWaktu();
+		setInterval(tampilkanWaktu, 1000);
+	</script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+#container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+}
+
+#header {
+    width: 1200px;
+    height: 250px;
+    background-color: gray;
+    background-image: url("gambar/shakaigo.jpg");
+    background-size: 100% 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-position: center;
+    position: relative;
+}
+
+#jam-box {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-size: 15px;
+    color: #F5FBEF;
+    text-shadow: 0 0 10px #2F5D73;
+    line-height: 0;
+}
+
+.navbar {
+    width: 1200px;
+    padding: 10px;
+    text-align: right;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar a {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
+
+.navbar a: hover {
+    text-decoration: none;
+}
+
+#content {
+    width: 1200px;
+    height: 100%px;
+    background-color: #E9F7F1;
+    color: #2F5D73;
+    background-size: 100% 100%;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.section {
+  display: flex;
+  gap: 0;
+  margin-bottom: 0;
+  align-items: flex-start;
+}
+
+.section img {
+  width: 200px;
+  display: block;
+}
+
+.text {
+    align-self: flex-start;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #6FCF97;
+    border-radius: 15px;
+    padding: 0;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;   
+}
+
+.btn {
+    font-size: 15px;
+    color: #E9F7F1;
+    display: inline-block;
+    padding: 10px 17px;
+    margin: 0 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #5f7f8a;
+}
+
+.contact-info p {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+    line-height: 9px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    text-align: left;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    line-height: 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+button {
+    background: #5F7F8A;
+    color: #fff;
+    border-radius: 15px;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4a6670;
+}
+
+
+.footer {
+    width: 1200px;
+    background-color: #2F5D73;
+    color: #E9F7F1;
+    
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    #container,
+    #content,
+    #header,
+    .navbar,
+    .footer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    #header {
+        height: 180px;
+        background-size: cover;
+    }
+
+    #jam-box {
+        font-size: 13px;
+        color: #2F5D73;
+        text-shadow: 0 0 10px #ffff;
+        padding: 5px;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 14px;
+    }
+
+    .section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .btn,
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}

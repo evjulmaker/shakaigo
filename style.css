@@ -193,13 +193,13 @@ button:hover {
     }
 
     .navbar {
-        text-align: center;
+        text-align: left;
     }
 
     .navbar a {
         display: inline-block;
-        margin: 5px 8px;
-        font-size: 14px;
+        margin: 0;
+        font-size: 12px;
     }
 
     .section {
